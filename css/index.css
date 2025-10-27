@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body {
+  line-height: 1.5;
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem; 
+  font-size: 15px;
+  --border-radius: .8rem;
+  --card-border-radius: 8px;
+
+  --btn-padding: .6rem 2rem;
+
+  --search-padding: .6rem 1rem;
+  --card-padding: 1rem;
+  font-family: system-ui;
+  /* background: linear-gradient(var(--color-white), var(--color-light)); */
+  background: var(--color-white);
+}
+
+:root[data-theme="light"] {
+  --primary-color-hue: 217;
+  --color-dark-light-theme: 20%;
+  --color-light-light-theme: 93%;
+  --color-white-light-theme: 100%;
+  
+  --color-white: hsl(252, 30%, var(--color-white-light-theme));
+  --color-light: hsl(190, 5%, var(--color-light-light-theme));
+  --color-gray: hsl(0, 0%, 58%);
+  --color-primary: hsl(var(--primary-color-hue), 56%, 60%);
+  --color-secondary: hsl(0, 0%, 84%);
+  --color-success: rgb(195, 220, 7);
+  --color-danger: hsl(352, 50%, 52%);
+  --color-dark: hsl(20, 9%, var(--color-dark-light-theme));
+  --color-black: hsl(252, 30%, 8%);
+  --color-dialog: rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme="dark"] {
+  --primary-color-hue: 217;
+  --color-dark-light-theme: 50%;
+  --color-light-light-theme: 10%;
+  --color-white-light-theme: 20%;
+  
+  --color-white: hsl(252, 30%, 8%);
+  --color-light: hsl(190, 0%, var(--color-white-light-theme));
+  --color-gray: hsl(0, 0%, 36%);
+  --color-primary: hsl(var(--primary-color-hue), 56%, 60%);
+  --color-secondary: hsl(180, 1%, 14%);
+  --color-success: hsl(352, 50%, 52%);
+  --color-danger: hsl(352, 50%, 52%);
+  --color-dark: hsl(200, 9%, var(--color-dark-light-theme));
+  --color-black: rgb(241, 241, 241);
+  --color-dialog: rgba(255, 255, 255, 0.5);
+}
+
+/* -----------Custom style-----------*/
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.profile-picture {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
+
+/* ==================Top Navbar==================*/
+.navi {
+  width: 100%;
+  height: 3rem;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+  text-transform: uppercase;
+  background-color: var(--color-white);
+  /* border-bottom: 1px solid var(--color-black); */
+}
+  
+/* ==================About==================*/
+.about {
+  color: var(--color-dark);
+  padding-top: 40px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==================Projects==================*/
+.project {
+  margin: 0 auto;
+  padding: 0 10% 50px;
+  /* width: 86%; */
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+   
+/* ==================Footer==================*/
+footer {
+  color: var(--color-light);
+}
+
+.foot {
+  text-align: center;
+  color: var(--color-gray);
+  position: relative;
+  bottom: 0rem;
+  width: 100%;
+  padding: 1rem;
+  display: block;
+  left: -1rem;
+  margin-top: 5rem;
+}
